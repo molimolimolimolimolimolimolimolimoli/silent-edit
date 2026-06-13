@@ -11,14 +11,9 @@ try {
         bundle: true,
         minify: true,
         outfile: "./dist/index.js",
-        format: "iife",
-        globalName: "plugin",
+        format: "cjs",
+        external: ["@vendetta", "@vendetta/*"],
         loader: { ".ts": "ts", ".tsx": "tsx" },
-        external: [
-            "@vendetta",
-            "@vendetta/*",
-        ],
-        footer: { js: "module.exports = plugin;" },
     });
 
     const toHash = await readFile("./dist/index.js");
