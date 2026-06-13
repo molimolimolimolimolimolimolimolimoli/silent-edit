@@ -1,0 +1,2 @@
+var plugin=(()=>{var t=(o=>typeof require<"u"?require:typeof Proxy<"u"?new Proxy(o,{get:(d,n)=>(typeof require<"u"?require:d)[n]}):o)(function(o){if(typeof require<"u")return require.apply(this,arguments);throw Error('Dynamic require of "'+o+'" is not supported')});var i=(o,d)=>()=>(d||o((d={exports:{}}).exports,d),d.exports);var a=i((r,e)=>{var l=t("@vendetta");e.exports={onLoad(){l.logger.log("[SilentEdit] Loaded.")},onUnload(){l.logger.log("[SilentEdit] Unloaded.")}}});return a();})();
+module.exports = plugin;
