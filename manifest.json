@@ -1,0 +1,14 @@
+{
+    "name": "SilentEdit",
+    "description": "Silently edit a message without showing the (edited) tag, bypassing message loggers.",
+    "authors": [
+        {
+            "name": "Aurick",
+            "id": "1348025017233047634"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_edit_24px"
+    }
+}
